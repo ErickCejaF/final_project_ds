@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4d2e295405.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Lamps System</a>
+</nav>
+<!-- Add your site or application content here -->
+<div class="container-fluid">
+    <div class="container bg-light">
+    <form class="form-group container">
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lamp 1</h5>
+                    {% if lamp1 == True %}
+                        <span style="font-size: 3em; color: Tomato; width: 100%">
+                    {% else %}
+                        <span style="font-size: 3em; color: GrayText; width: 100%">
+                    {% endif %}
+                        <i class="fas fa-lightbulb"></i>
+                    </span>
+                    <p class="card-text">Press button to change lamp status</p>
+                    <button type="submit" name="lamp1" value="true"
+                            class="d-flex btn justify-content-center active p-3 mt-2 ml-1 mr-1 col-md bg-danger">
+                        Toggle
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lamp 2</h5>
+                    {% if lamp2 == True %}
+                        <span style="font-size: 3em; color: Tomato; width: 100%">
+                    {% else %}
+                        <span style="font-size: 3em; color: GrayText; width: 100%">
+                    {% endif %}
+                        <i class="fas fa-lightbulb"></i>
+                    </span>
+                    <p class="card-text">Press button to change lamp status</p>
+                    <button type="submit" name="lamp2" value="true"
+                            class="d-flex btn justify-content-center active p-3 mt-2 ml-1 mr-1 col-md bg-danger">
+                        Toggle
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lamp 3</h5>
+                    {% if lamp3 == True %}
+                        <span style="font-size: 3em; color: Tomato; width: 100%">
+                    {% else %}
+                        <span style="font-size: 3em; color: GrayText; width: 100%">
+                    {% endif %}
+                        <i class="fas fa-lightbulb"></i>
+                    </span>
+                    <p class="card-text">Press button to change lamp status</p>
+                    <button type="submit" name="lamp3" value="true"
+                            class="d-flex btn justify-content-center active p-3 mt-2 ml-1 mr-1 col-md bg-danger">
+                        Toggle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+
+</html>
